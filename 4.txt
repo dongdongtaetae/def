@@ -1,0 +1,25 @@
+def calc_grade(a,h,m,f):
+    sum=a*0.2+h*0.2+m*0.3+f*0.3
+    total=int(sum)
+
+    if total>=90:
+        print(total)
+        print("A")
+    elif total>=80:
+        print(total)
+        print("B")
+    elif total>=70:
+        print(total)
+        print("C")
+    elif total>=60:
+        print(total)
+        print("D")
+    else:
+        print(total)
+        print("F")
+attend=int(input())
+hw=int(input())
+mid=int(input())
+final=int(input())
+
+calc_grade(attend, hw,mid,final)

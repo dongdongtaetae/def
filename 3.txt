@@ -1,0 +1,18 @@
+def calcPrice(a,b):
+    if a>=70:
+        price=1000
+    elif a<8:
+        price=500
+    else:
+        price=3000
+
+    if card==1:
+        price=int(price*0.9)
+    elif card==2:
+        price=int(price*0.8)
+    return price
+
+
+age=int(input())
+card=int(input())
+print("Total amount:", calcPrice(age,card))
